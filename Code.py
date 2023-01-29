@@ -47,18 +47,18 @@ time.sleep(8)
 #Tiempo de salida
 driver.find_element('xpath','/html/body/div[3]/div[9]/div[9]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]/span/div/div/div/div[2]').click()
 time.sleep(6)
-driver.find_element('xpath','/html/body/div[6]/div[2]').click()
+driver.find_element('xpath','/html/body/div[7]/div[2]').click()
 
 #Escoger hora de ejemplo. Notar que div[23] equivale a 11 am
 driver.find_element('xpath','/html/body/div[3]/div[9]/div[9]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]/div[1]/span[1]/input').clear()
-driver.find_element('xpath','/html/body/div[7]/div[23]').click()
+driver.find_element('xpath','/html/body/div[8]/div[23]').click()
 time.sleep(6)
 
 #Escoger fecha de ejemplo.
 driver.find_element('xpath','/html/body/div[3]/div[9]/div[9]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]/div[1]/span[2]/span[1]').click()
 while True:
-	driver.find_element('xpath','/html/body/div[8]/table/thead/tr/td[1]').click()
-	fecha = driver.find_element('xpath','/html/body/div[8]/table/thead/tr/td[2]').text
+	driver.find_element('xpath','/html/body/div[9]/table/thead/tr/td[1]').click()
+	fecha = driver.find_element('xpath','/html/body/div[9]/table/thead/tr/td[2]').text
 	if fecha=='agosto de 2017':
 		break
 
